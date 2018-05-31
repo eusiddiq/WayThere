@@ -227,7 +227,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void getWeather(double lat, double lon, final int i){
         final LatLng location = new LatLng(lat, lon);
         OpenWeatherMapHelper helper = new OpenWeatherMapHelper();
-        helper.setApiKey("b84c7d5441b754b375a42b4a9568957e");
+        helper.setApiKey("YOUR_API_KEY_HERE");
         helper.setUnits(Units.IMPERIAL);
         helper.getCurrentWeatherByGeoCoordinates(lat, lon, new OpenWeatherMapHelper.CurrentWeatherCallback() {
             @Override
